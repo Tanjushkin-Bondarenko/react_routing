@@ -1,0 +1,18 @@
+
+.home{
+    grid-area: head;
+    width: 100vw;
+  padding: 50px 0;
+    background-color: hsl(160, 100%, 75%);
+    height: auto;
+    text-align: center;
+}
+.home h2{
+    color: brown;
+    text-transform: uppercase;
+    text-decoration: dotted;
+}
+.home h4{
+    color: lightsteelblue;
+    text-decoration: solid;
+}

@@ -1,0 +1,12 @@
+.users-page{
+    width: 200px;
+    height: 200px;
+    padding: 15px 15px;
+   
+  }
+  .users-page a{
+    font-size: 1.5em;
+  }
+  .users-page h2{
+    color: rgb(75, 75, 75);
+  }

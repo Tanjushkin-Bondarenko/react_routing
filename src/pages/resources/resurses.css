@@ -1,0 +1,12 @@
+.resources{
+    background-color: rgb(223, 193, 252);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.resources h2{
+    color: blueviolet;
+    font-size: 3em;
+}
+.resources p{
+    color: blue;
+    
+}

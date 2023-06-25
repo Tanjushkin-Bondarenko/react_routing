@@ -1,0 +1,12 @@
+.tp{
+    grid-area: main;
+    background-color: rgb(232, 247, 242);
+    width: 75vw;
+    min-height: 65vh;
+    padding: 20px 50px;
+    margin: 2% 0;
+}
+.tp h2, 
+.tp p{
+color: rgb(86, 85, 85);
+}

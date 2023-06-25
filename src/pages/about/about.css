@@ -1,0 +1,15 @@
+.about{
+  
+    background-color: rgb(181, 244, 223);
+    width: 80vw;
+    margin: 100px 0;
+}
+.about h2{
+    color: blueviolet;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+.about p{
+    padding: 10px 50px;
+    color: blue;
+}
