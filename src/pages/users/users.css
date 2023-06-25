@@ -1,7 +1,10 @@
 .users-page{
     width: 200px;
-    height: 200px;
+    height: 400px;
     padding: 15px 15px;
+    font-weight: 100;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
    
   }
   .users-page a{
@@ -9,4 +12,8 @@
   }
   .users-page h2{
     color: rgb(75, 75, 75);
+  }
+  .users-page img{
+    width: 100px;
+    height: auto;
   }

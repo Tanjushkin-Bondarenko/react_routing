@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, createRoutesFromElements } from 'react-router-dom';
 import './index.css';
 import { Home } from './pages/home/Home';
 import { About } from './pages/about/About';
@@ -16,7 +15,7 @@ import  usersData  from './data/users.json';
 
 import {
   createBrowserRouter,
-  createRoutesFromElement,
+  createRoutesFromElements,
   RouterProvider,
   Route,
   Outlet
@@ -31,10 +30,7 @@ const Root = () => {
     </div>
   )
 }
-const loader = () => {
-  console.log(usersData);
-  return true;
-}
+
 const ourrouter = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Root />}>
@@ -44,7 +40,7 @@ const ourrouter = createBrowserRouter(
       <Route path='community' element={<Community />} />
       <Route path='resources' element={<Resources />} />
       <Route path='users' element={<Users />} />
-      <Route path='users/:userId' loader={loader} element={<UsersPage />} />
+      <Route path='users/:userId' loader={loader} element={<UsersPage />} errorElement={<Error />} />
       <Route path='*' element={<Error />} />
     </Route>
   )
@@ -61,4 +57,7 @@ root.render(
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-
+function loader({params}){
+  const user = usersData.filter(e => e.id === params.userId)
+  return user[0];
+}
